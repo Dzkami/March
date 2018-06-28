@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SqliteUtil.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    SqliteUtil *sqlite;
+}
 
 @end
 
@@ -16,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    sqlite = [[SqliteUtil alloc] init];
+    [sqlite open_db];
+
 }
 
 
