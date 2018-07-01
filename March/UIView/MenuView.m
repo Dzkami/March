@@ -7,7 +7,11 @@
 //
 
 #import "MenuView.h"
-#import "RATreeView.h"
+//
+//@interface MenuView() {
+//    UITableView *tv_menuTree;
+//}
+//@end
 
 @implementation MenuView
 - (id)init {
@@ -15,7 +19,7 @@
     if(self) {
         [self setFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
         [self createTopFuncView];
-        [self createProjectTreeView];
+        [self createMenuTreeView];
     }
     return self;
 }
@@ -27,16 +31,19 @@
 
 - (void)createTopFuncView {
     _topFuncView = [[UIView alloc] init];
-    _topFuncView.backgroundColor = [UIColor yellowColor];
     [self addSubview:_topFuncView];
     
-    _lb_userName = [[UILabel alloc] init];
-    [_lb_userName setFont:[UIFont systemFontOfSize:30]];
-    [self.topFuncView addSubview:_lb_userName];
+    _bt_userName = [[UIButton alloc] init];
+    [_bt_userName setTitle:@"点击登录" forState:UIControlStateNormal];
+    [_bt_userName setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    _bt_userName.titleLabel.font = [UIFont systemFontOfSize:30];
+    _bt_userName.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    [self.topFuncView addSubview:_bt_userName];
     
     _lb_userId = [[UILabel alloc] init];
     [_lb_userId setFont:[UIFont systemFontOfSize:17]];
     [_lb_userId setAlpha:0.5];
+    [_lb_userId setText:@""];
     [self.topFuncView addSubview:_lb_userId];
     
     _bt_add = [[UIButton alloc] init];
@@ -52,9 +59,9 @@
     [self addSubview:_bt_message];
 }
 
-- (void)createProjectTreeView {
-    _projectTreeView = [[UIView alloc] init];
-    [self addSubview:_projectTreeView];
+- (void)createMenuTreeView {
+    _tv_menuTree = [[UITableView alloc] init];
+    [self addSubview:_tv_menuTree];
 }
 
 // this is Apple's recommended place for adding/updating constraints
@@ -69,15 +76,15 @@
         make.size.equalTo(@(CGSizeMake(self.frame.size.width, 100)));
     }];
     
-    [self.projectTreeView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.tv_menuTree mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.topFuncView.mas_bottom);
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
         make.bottom.equalTo(self.mas_bottom);
     }];
     
-    [self.lb_userName mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.topFuncView.mas_top).offset(20);
+    [self.bt_userName mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.topFuncView.mas_top).offset(25);
         make.bottom.equalTo(self.lb_userId.mas_top).offset(5);
         make.left.equalTo(self.topFuncView.mas_left).offset(10);
         make.right.equalTo(self.bt_add.mas_left).offset(-15);
@@ -91,7 +98,7 @@
     
     [self.bt_add mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(@(CGSizeMake(25, 25)));
-        make.centerY.equalTo(self.topFuncView);//垂直居中
+        make.centerY.equalTo(self.topFuncView.mas_centerY);//垂直居中
         make.right.equalTo(self.bt_search.mas_left).offset(-10);
     }];
     
@@ -110,7 +117,6 @@
     //according to apple super should be called at end of method
     [super updateConstraints];
 }
-
 
 
 @end

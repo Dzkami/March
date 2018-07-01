@@ -28,6 +28,7 @@ static const CGFloat criticalValue = 320/3.0;
     [super viewDidLoad];
 //    sqlite = [[SqliteUtil alloc] init];
 //    [sqlite open_db];
+    
     [self.navigationController setNavigationBarHidden:true];
     
     _vc_menu = [[MenuViewController alloc] init];
@@ -38,6 +39,16 @@ static const CGFloat criticalValue = 320/3.0;
 //    [_vc_main goToMenu:_vc_menu];
     
     [self transferToMenu];
+//    
+//    
+//    NSString *sql = @"SELECT * FROM UserInfo;";
+//    FMResultSet *result = [sqlite search_db:sql];
+//    
+//    while([result next]) {
+//        NSString *userId = [result stringForColumn:@"userId"];
+//        NSString *userName = [result stringForColumn:@"userName"];
+//        NSLog(@"id:%@  name:%@",userId,userName);
+//    }
     
 }
 

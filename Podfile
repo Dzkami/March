@@ -12,9 +12,7 @@ target 'March' do
     # pod 'FMDB/standalone'   # FMDB with latest SQLite amalgamation source
     # pod 'FMDB/standalone/FTS'   # FMDB with latest SQLite amalgamation source and FTS
     # pod 'FMDB/SQLCipher'   # FMDB with SQLCipher
-   
-    pod "RATreeView", "~> 2.1.2"
-    
+       
     pod 'Masonry','~>1.0.2'
 
   target 'MarchTests' do

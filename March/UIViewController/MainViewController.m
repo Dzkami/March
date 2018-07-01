@@ -20,9 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    vw_main = [[MainView alloc] init];
-//    [self.view addSubview: vw_main];
-//
+
     UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 44)];
    
     UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:@"进行中项目"];

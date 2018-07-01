@@ -10,12 +10,13 @@
 
 @interface MenuView : BasicView
 @property (nonatomic, strong) UIView *topFuncView;
-@property (nonatomic, strong) UIView *projectTreeView;
-@property (nonatomic, strong) UILabel *lb_userName;
+@property (nonatomic, strong) UITableView *tv_menuTree;
+@property (nonatomic, strong) UIButton *bt_userName;
 @property (nonatomic, strong) UILabel *lb_userId;
 @property (nonatomic, strong) UIButton *bt_add;
 @property (nonatomic, strong) UIButton *bt_search;
 @property (nonatomic, strong) UIButton *bt_message;
 
 - (id)init;
+//- (UITableView *)MenuTree;
 @end

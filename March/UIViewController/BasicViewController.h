@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SqliteUtil.h"
 
 @interface BasicViewController : UIViewController
 

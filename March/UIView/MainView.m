@@ -8,7 +8,6 @@
 
 #import "MainView.h"
 
-static const CGFloat criticalValue = 320/2.0;
 @interface MainView () {
     CGPoint startTouchPoint;
 }

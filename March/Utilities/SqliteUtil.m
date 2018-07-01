@@ -11,17 +11,21 @@
 @interface SqliteUtil () {
     FMDatabase *fmdb;
 }
+
+//@property (nonatomic, retain)
 @end
 
 @implementation SqliteUtil
 
 -(void)open_db {
-    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true) lastObject];
-    NSString *dbPath = [docPath stringByAppendingString:@"march.db"];
-    fmdb = [FMDatabase databaseWithPath:dbPath];
-    
+//    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, true) lastObject];
+//    NSString *dbPath = [docPath stringByAppendingString:@"march.db"];
+
+    NSString *dbPath = [[NSBundle mainBundle] pathForResource:@"Documentationmarch" ofType:@"db"];
     NSLog(@"%@", dbPath);
-    
+    fmdb = [FMDatabase databaseWithPath:dbPath];
+
+
     if([fmdb open]) {
         NSLog(@"打开成功");
     } else {
