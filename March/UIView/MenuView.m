@@ -77,7 +77,7 @@
     }];
     
     [self.tv_menuTree mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.topFuncView.mas_bottom);
+        make.top.equalTo(self.topFuncView.mas_bottom).offset(10);
         make.left.equalTo(self.mas_left);
         make.right.equalTo(self.mas_right);
         make.bottom.equalTo(self.mas_bottom);
@@ -85,7 +85,7 @@
     
     [self.bt_userName mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.topFuncView.mas_top).offset(25);
-        make.bottom.equalTo(self.lb_userId.mas_top).offset(5);
+        make.bottom.equalTo(self.lb_userId.mas_top).offset(3);
         make.left.equalTo(self.topFuncView.mas_left).offset(10);
         make.right.equalTo(self.bt_add.mas_left).offset(-15);
     }];
@@ -93,7 +93,7 @@
     [self.lb_userId mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.topFuncView.mas_bottom).offset(10);
         make.left.equalTo(self.topFuncView.mas_left).offset(10);
-        make.right.equalTo(self.bt_add.mas_left).offset(-15);
+        make.right.equalTo(self.topFuncView.mas_right);
     }];
     
     [self.bt_add mas_makeConstraints:^(MASConstraintMaker *make) {

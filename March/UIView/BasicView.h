@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Uitl.h"
+#import "Util.h"
 #import "Masonry.h"
 
 @interface BasicView : UIView

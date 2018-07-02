@@ -13,6 +13,7 @@
 #import "ProjectCell.h"
 #import "MyItem.h"
 
+
 @interface MenuViewController() <UITableViewDataSource, UITableViewDelegate>{
     NSUserDefaults *userDefault;
     MenuView *vw_menu;
@@ -29,10 +30,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
+    
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    userId = [userDefault objectForKey:@"userId"];
     
     vw_menu = [[MenuView alloc] init];
-    [vw_menu.bt_userName addTarget:self action:@selector(checkLogin) forControlEvents:UIControlEventTouchUpInside];
+    [vw_menu.bt_userName addTarget:self action:@selector(toUserCenter) forControlEvents:UIControlEventTouchUpInside];
+    
+    [vw_menu.bt_add addTarget:self action:@selector(addProjectOrGroup) forControlEvents:UIControlEventTouchUpInside];
 
     self.menuData = [[MenuData alloc] init];
     [self loadMenuData];
@@ -40,18 +45,17 @@
     [self initMenuTreeView];
 }
 
-- (void)checkLogin {
-    NSString *userId = [userDefault objectForKey:@"userId"];
-    if(!userId) {
-        //跳转登录
-    } else {
-        //跳个人信息页面
-    }
-}
+
 
 - (void)loadMenuData {
     SqliteUtil *sqlite = [[SqliteUtil alloc] init];
     [sqlite open_db];
+    
+    NSString *searchName = [NSString stringWithFormat:@"SELECT * FROM userInfo WHERE userId = '%@'",userId];
+    FMResultSet *uName = [sqlite search_db:searchName];
+    while([uName next]) {
+        userName = [uName stringForColumn:@"userName"];
+    }
     
     NSString *searchPG = [NSString stringWithFormat:@"SELECT * FROM ProjectGroup WHERE userId = '%@';", userId];
     FMResultSet *pGroup = [sqlite search_db:searchPG];
@@ -83,14 +87,7 @@
     
 }
 
-- (void)getUserInfo {
-   
-    userName = [userDefault objectForKey:@"userName"];
-    userId = [userDefault objectForKey:@"userId"];
-}
-
 - (void)initTopFuncView {
-   
     [vw_menu.bt_userName setTitle:userName forState:UIControlStateNormal];
     [vw_menu.lb_userId setText:userId];
     [self.view addSubview:vw_menu];
@@ -148,6 +145,34 @@
         }
     }
 }
+
+#pragma mark -- ButtonActions
+- (void)toUserCenter {
+    //跳个人中心
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey:@"userId"];
+}
+
+- (void)addProjectOrGroup {
+    UIAlertController *alertController = [[UIAlertController alloc] init];
+    NSString *addProjectBtTitle = @"添加项目";
+    NSString *addGroupBtTitle = @"添加项目族";
+    
+    UIAlertAction *addProjectAction = [UIAlertAction actionWithTitle:addProjectBtTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    UIAlertAction *addGroupAction = [UIAlertAction actionWithTitle:addGroupBtTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertController addAction:addProjectAction];
+    [alertController addAction:addGroupAction];
+    
+    [self presentViewController:alertController animated:true completion:nil];
+}
+
+
 
 
 
