@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
+#import "Util.h"
 
 @interface BasicTableViewCell : UITableViewCell
 

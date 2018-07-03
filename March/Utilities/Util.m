@@ -31,5 +31,11 @@
     [field.layer addAnimation:keyAn forKey:@"text"];
 }
 
++ (NSString *)transDateToString:(NSDate *)date {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy年MM月dd日";
+    return [formatter stringFromDate:date];
+}
+
 
 @end

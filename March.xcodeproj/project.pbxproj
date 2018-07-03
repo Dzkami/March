@@ -11,6 +11,7 @@
 		75B0E4983640E7B0DB36A3B2 /* libPods-March.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1C7805BF5983F3AF430A9A /* libPods-March.a */; };
 		D8214BE320E4BDCF00A8A856 /* SqliteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */; };
 		D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */; };
+		D82E257F20E9DEE800C2EE2B /* AddProjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257E20E9DEE800C2EE2B /* AddProjectView.m */; };
 		D838924320E4B20A00C26364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D838924220E4B20A00C26364 /* AppDelegate.m */; };
 		D838924620E4B20A00C26364 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D838924520E4B20A00C26364 /* ViewController.m */; };
 		D838924920E4B20A00C26364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D838924720E4B20A00C26364 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		D838925120E4B20E00C26364 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D838925020E4B20E00C26364 /* main.m */; };
 		D838925B20E4B20E00C26364 /* MarchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D838925A20E4B20E00C26364 /* MarchTests.m */; };
 		D838926620E4B20E00C26364 /* MarchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D838926520E4B20E00C26364 /* MarchUITests.m */; };
-		D86D4BB220E5D6C700AE3C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86D4BB120E5D6C700AE3C80 /* Assets.xcassets */; };
 		D86D4BB520E5D97500AE3C80 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BB420E5D97500AE3C80 /* MenuViewController.m */; };
 		D86D4BB920E5EDE100AE3C80 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BB820E5EDE100AE3C80 /* Util.m */; };
 		D86D4BBD20E605A500AE3C80 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BBC20E605A500AE3C80 /* User.m */; };
@@ -26,6 +26,16 @@
 		D86D4BC420E61D2000AE3C80 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BC320E61D2000AE3C80 /* Group.m */; };
 		D86D4BC720E6214300AE3C80 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BC620E6214300AE3C80 /* MainViewController.m */; };
 		D86D4BCA20E6215600AE3C80 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86D4BC920E6215600AE3C80 /* BasicViewController.m */; };
+		D874EB6320EA003C00240E44 /* ProjectInfoTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D874EB6120EA003C00240E44 /* ProjectInfoTextCell.m */; };
+		D874EB6420EA003C00240E44 /* ProjectInfoTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874EB6220EA003C00240E44 /* ProjectInfoTextCell.xib */; };
+		D874EB6820EA00AC00240E44 /* ProjectInfoDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D874EB6620EA00AC00240E44 /* ProjectInfoDateCell.m */; };
+		D874EB6920EA00AC00240E44 /* ProjectInfoDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874EB6720EA00AC00240E44 /* ProjectInfoDateCell.xib */; };
+		D874EB6D20EA096F00240E44 /* ProjectInfoPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D874EB6B20EA096F00240E44 /* ProjectInfoPickerCell.m */; };
+		D874EB6E20EA096F00240E44 /* ProjectInfoPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874EB6C20EA096F00240E44 /* ProjectInfoPickerCell.xib */; };
+		D874EB7120EA10BA00240E44 /* CreateProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D874EB7020EA10BA00240E44 /* CreateProjectModel.m */; };
+		D874EB7820EA4BB800240E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D874EB7720EA4BB700240E44 /* Assets.xcassets */; };
+		D874EB7D20EA4FE900240E44 /* ClickAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D874EB7B20EA4FE900240E44 /* ClickAddCell.m */; };
+		D874EB7E20EA4FE900240E44 /* ClickAddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D874EB7C20EA4FE900240E44 /* ClickAddCell.xib */; };
 		D87679D220E8925E0080F2F6 /* Documentationmarch.db in Resources */ = {isa = PBXBuildFile; fileRef = D87679D120E8925E0080F2F6 /* Documentationmarch.db */; };
 		D87679D820E89F0B0080F2F6 /* MenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = D87679D720E89F0B0080F2F6 /* MenuData.m */; };
 		D87679DB20E8A05A0080F2F6 /* MyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D87679DA20E8A05A0080F2F6 /* MyItem.m */; };
@@ -37,6 +47,8 @@
 		D8B8BC5A20E8BF1F005EDDFD /* PGCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B8BC5820E8BF1F005EDDFD /* PGCell.xib */; };
 		D8B8BC5E20E8C493005EDDFD /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B8BC5C20E8C493005EDDFD /* ProjectCell.m */; };
 		D8B8BC5F20E8C493005EDDFD /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B8BC5D20E8C493005EDDFD /* ProjectCell.xib */; };
+		D8CD643320EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */; };
+		D8CD643420EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */; };
 		D8D1B9D892AB2F8BBE30DFD3 /* libPods-MarchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F0DC89335D47C92796BB25 /* libPods-MarchUITests.a */; };
 		D8F6D98120E9094E00D4C91D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6D98020E9094E00D4C91D /* LoginViewController.m */; };
 		D8F6D98420E909D900D4C91D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6D98320E909D900D4C91D /* RegisterViewController.m */; };
@@ -70,6 +82,8 @@
 		D8214BE220E4BDCF00A8A856 /* SqliteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteUtil.h; sourceTree = "<group>"; };
 		D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
 		D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddProjectViewController.m; sourceTree = "<group>"; };
+		D82E257D20E9DEE800C2EE2B /* AddProjectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddProjectView.h; sourceTree = "<group>"; };
+		D82E257E20E9DEE800C2EE2B /* AddProjectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddProjectView.m; sourceTree = "<group>"; };
 		D838923E20E4B20A00C26364 /* March.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = March.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D838924120E4B20A00C26364 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D838924220E4B20A00C26364 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,7 +99,6 @@
 		D838926120E4B20E00C26364 /* MarchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D838926520E4B20E00C26364 /* MarchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarchUITests.m; sourceTree = "<group>"; };
 		D838926720E4B20E00C26364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D86D4BB120E5D6C700AE3C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86D4BB320E5D97500AE3C80 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		D86D4BB420E5D97500AE3C80 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		D86D4BB720E5EDE100AE3C80 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
@@ -100,6 +113,21 @@
 		D86D4BC620E6214300AE3C80 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D86D4BC820E6215600AE3C80 /* BasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		D86D4BC920E6215600AE3C80 /* BasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		D874EB6020EA003C00240E44 /* ProjectInfoTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectInfoTextCell.h; sourceTree = "<group>"; };
+		D874EB6120EA003C00240E44 /* ProjectInfoTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectInfoTextCell.m; sourceTree = "<group>"; };
+		D874EB6220EA003C00240E44 /* ProjectInfoTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoTextCell.xib; sourceTree = "<group>"; };
+		D874EB6520EA00AC00240E44 /* ProjectInfoDateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectInfoDateCell.h; sourceTree = "<group>"; };
+		D874EB6620EA00AC00240E44 /* ProjectInfoDateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectInfoDateCell.m; sourceTree = "<group>"; };
+		D874EB6720EA00AC00240E44 /* ProjectInfoDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoDateCell.xib; sourceTree = "<group>"; };
+		D874EB6A20EA096F00240E44 /* ProjectInfoPickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectInfoPickerCell.h; sourceTree = "<group>"; };
+		D874EB6B20EA096F00240E44 /* ProjectInfoPickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectInfoPickerCell.m; sourceTree = "<group>"; };
+		D874EB6C20EA096F00240E44 /* ProjectInfoPickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoPickerCell.xib; sourceTree = "<group>"; };
+		D874EB6F20EA10BA00240E44 /* CreateProjectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateProjectModel.h; sourceTree = "<group>"; };
+		D874EB7020EA10BA00240E44 /* CreateProjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateProjectModel.m; sourceTree = "<group>"; };
+		D874EB7720EA4BB700240E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D874EB7A20EA4FE900240E44 /* ClickAddCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickAddCell.h; sourceTree = "<group>"; };
+		D874EB7B20EA4FE900240E44 /* ClickAddCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickAddCell.m; sourceTree = "<group>"; };
+		D874EB7C20EA4FE900240E44 /* ClickAddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClickAddCell.xib; sourceTree = "<group>"; };
 		D87679D120E8925E0080F2F6 /* Documentationmarch.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Documentationmarch.db; path = "../Supporting File/Documentationmarch.db"; sourceTree = "<group>"; };
 		D87679D620E89F0B0080F2F6 /* MenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuData.h; sourceTree = "<group>"; };
 		D87679D720E89F0B0080F2F6 /* MenuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuData.m; sourceTree = "<group>"; };
@@ -119,6 +147,9 @@
 		D8B8BC5B20E8C493005EDDFD /* ProjectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
 		D8B8BC5C20E8C493005EDDFD /* ProjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
 		D8B8BC5D20E8C493005EDDFD /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
+		D8CD643020EA5AB400CBE9CA /* ProjectInfoMileStoneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectInfoMileStoneCell.h; sourceTree = "<group>"; };
+		D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectInfoMileStoneCell.m; sourceTree = "<group>"; };
+		D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoMileStoneCell.xib; sourceTree = "<group>"; };
 		D8F6D97F20E9094E00D4C91D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D8F6D98020E9094E00D4C91D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D8F6D98220E909D900D4C91D /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -201,8 +232,8 @@
 				D838924420E4B20A00C26364 /* ViewController.h */,
 				D838924520E4B20A00C26364 /* ViewController.m */,
 				D838924720E4B20A00C26364 /* Main.storyboard */,
-				D86D4BB120E5D6C700AE3C80 /* Assets.xcassets */,
 				D838924C20E4B20E00C26364 /* LaunchScreen.storyboard */,
+				D874EB7720EA4BB700240E44 /* Assets.xcassets */,
 				D838924F20E4B20E00C26364 /* Info.plist */,
 				D838925020E4B20E00C26364 /* main.m */,
 			);
@@ -240,8 +271,8 @@
 				D8F6D98020E9094E00D4C91D /* LoginViewController.m */,
 				D8F6D98220E909D900D4C91D /* RegisterViewController.h */,
 				D8F6D98320E909D900D4C91D /* RegisterViewController.m */,
-				D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */,
 				D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */,
+				D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -249,8 +280,6 @@
 		D86D4BB620E5EDA800AE3C80 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				D87679D620E89F0B0080F2F6 /* MenuData.h */,
-				D87679D720E89F0B0080F2F6 /* MenuData.m */,
 				D8214BE220E4BDCF00A8A856 /* SqliteUtil.h */,
 				D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */,
 				D86D4BB720E5EDE100AE3C80 /* Util.h */,
@@ -262,6 +291,8 @@
 		D86D4BBA20E6058F00AE3C80 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				D874EB7020EA10BA00240E44 /* CreateProjectModel.m */,
+				D874EB6F20EA10BA00240E44 /* CreateProjectModel.h */,
 				D87679D920E8A05A0080F2F6 /* MyItem.h */,
 				D87679DA20E8A05A0080F2F6 /* MyItem.m */,
 				D86D4BBB20E605A500AE3C80 /* User.h */,
@@ -270,6 +301,8 @@
 				D86D4BC020E61D1700AE3C80 /* Project.m */,
 				D86D4BC220E61D2000AE3C80 /* Group.h */,
 				D86D4BC320E61D2000AE3C80 /* Group.m */,
+				D87679D620E89F0B0080F2F6 /* MenuData.h */,
+				D87679D720E89F0B0080F2F6 /* MenuData.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -292,6 +325,8 @@
 				D8800E9520E74077000DD34A /* MainView.m */,
 				D8800E9720E7663A000DD34A /* BasicView.h */,
 				D8800E9820E7663A000DD34A /* BasicView.m */,
+				D82E257D20E9DEE800C2EE2B /* AddProjectView.h */,
+				D82E257E20E9DEE800C2EE2B /* AddProjectView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -307,6 +342,21 @@
 				D8B8BC5B20E8C493005EDDFD /* ProjectCell.h */,
 				D8B8BC5C20E8C493005EDDFD /* ProjectCell.m */,
 				D8B8BC5D20E8C493005EDDFD /* ProjectCell.xib */,
+				D874EB6020EA003C00240E44 /* ProjectInfoTextCell.h */,
+				D874EB6120EA003C00240E44 /* ProjectInfoTextCell.m */,
+				D874EB6220EA003C00240E44 /* ProjectInfoTextCell.xib */,
+				D874EB6520EA00AC00240E44 /* ProjectInfoDateCell.h */,
+				D874EB6620EA00AC00240E44 /* ProjectInfoDateCell.m */,
+				D874EB6720EA00AC00240E44 /* ProjectInfoDateCell.xib */,
+				D874EB6A20EA096F00240E44 /* ProjectInfoPickerCell.h */,
+				D874EB6B20EA096F00240E44 /* ProjectInfoPickerCell.m */,
+				D874EB6C20EA096F00240E44 /* ProjectInfoPickerCell.xib */,
+				D874EB7A20EA4FE900240E44 /* ClickAddCell.h */,
+				D874EB7B20EA4FE900240E44 /* ClickAddCell.m */,
+				D874EB7C20EA4FE900240E44 /* ClickAddCell.xib */,
+				D8CD643020EA5AB400CBE9CA /* ProjectInfoMileStoneCell.h */,
+				D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */,
+				D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -430,11 +480,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D874EB6E20EA096F00240E44 /* ProjectInfoPickerCell.xib in Resources */,
+				D874EB7820EA4BB800240E44 /* Assets.xcassets in Resources */,
 				D838924E20E4B20E00C26364 /* LaunchScreen.storyboard in Resources */,
-				D86D4BB220E5D6C700AE3C80 /* Assets.xcassets in Resources */,
+				D874EB6920EA00AC00240E44 /* ProjectInfoDateCell.xib in Resources */,
+				D8CD643420EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib in Resources */,
+				D874EB7E20EA4FE900240E44 /* ClickAddCell.xib in Resources */,
 				D8B8BC5A20E8BF1F005EDDFD /* PGCell.xib in Resources */,
 				D87679D220E8925E0080F2F6 /* Documentationmarch.db in Resources */,
 				D838924920E4B20A00C26364 /* Main.storyboard in Resources */,
+				D874EB6420EA003C00240E44 /* ProjectInfoTextCell.xib in Resources */,
 				D8B8BC5F20E8C493005EDDFD /* ProjectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,17 +577,24 @@
 				D838924620E4B20A00C26364 /* ViewController.m in Sources */,
 				D86D4BBD20E605A500AE3C80 /* User.m in Sources */,
 				D8F6D98420E909D900D4C91D /* RegisterViewController.m in Sources */,
+				D874EB6820EA00AC00240E44 /* ProjectInfoDateCell.m in Sources */,
 				D8F6D98120E9094E00D4C91D /* LoginViewController.m in Sources */,
 				D86D4BC720E6214300AE3C80 /* MainViewController.m in Sources */,
+				D874EB6320EA003C00240E44 /* ProjectInfoTextCell.m in Sources */,
 				D87679DB20E8A05A0080F2F6 /* MyItem.m in Sources */,
 				D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */,
+				D874EB6D20EA096F00240E44 /* ProjectInfoPickerCell.m in Sources */,
 				D87679D820E89F0B0080F2F6 /* MenuData.m in Sources */,
 				D838925120E4B20E00C26364 /* main.m in Sources */,
+				D82E257F20E9DEE800C2EE2B /* AddProjectView.m in Sources */,
 				D8800E9620E74077000DD34A /* MainView.m in Sources */,
 				D8800E8F20E728CB000DD34A /* MenuView.m in Sources */,
+				D874EB7D20EA4FE900240E44 /* ClickAddCell.m in Sources */,
+				D8CD643320EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m in Sources */,
 				D8B8BC5E20E8C493005EDDFD /* ProjectCell.m in Sources */,
 				D86D4BC120E61D1700AE3C80 /* Project.m in Sources */,
 				D838924320E4B20A00C26364 /* AppDelegate.m in Sources */,
+				D874EB7120EA10BA00240E44 /* CreateProjectModel.m in Sources */,
 				D86D4BB920E5EDE100AE3C80 /* Util.m in Sources */,
 				D8214BE320E4BDCF00A8A856 /* SqliteUtil.m in Sources */,
 				D8800E9920E7663A000DD34A /* BasicView.m in Sources */,

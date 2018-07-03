@@ -10,5 +10,5 @@
 #import "Util.h"
 
 @interface MenuViewController : BasicViewController
-
+- (void)initMenu;
 @end

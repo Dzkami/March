@@ -12,13 +12,16 @@
 #import "PGCell.h"
 #import "ProjectCell.h"
 #import "MyItem.h"
+#import "AddProjectViewController.h"
 
 
-@interface MenuViewController() <UITableViewDataSource, UITableViewDelegate>{
+@interface MenuViewController() <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate>{
     NSUserDefaults *userDefault;
     MenuView *vw_menu;
     NSString *userName;
     NSString *userId;
+    UITapGestureRecognizer *tap;
+    UIAlertController *alertController;
 }
 
 @property (nonatomic, retain) MenuData *menuData;
@@ -29,6 +32,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initMenu];
+}
+
+- (void)initMenu {
     [self.view setFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
     
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
@@ -38,19 +45,17 @@
     [vw_menu.bt_userName addTarget:self action:@selector(toUserCenter) forControlEvents:UIControlEventTouchUpInside];
     
     [vw_menu.bt_add addTarget:self action:@selector(addProjectOrGroup) forControlEvents:UIControlEventTouchUpInside];
-
+    
     self.menuData = [[MenuData alloc] init];
-    [self loadMenuData];
+    [self loadMenuData:userId];
     [self initTopFuncView];
     [self initMenuTreeView];
 }
 
-
-
-- (void)loadMenuData {
+- (void)loadMenuData:(NSString *)userId {
     SqliteUtil *sqlite = [[SqliteUtil alloc] init];
     [sqlite open_db];
-    
+    NSLog(@"%@",userId);
     NSString *searchName = [NSString stringWithFormat:@"SELECT * FROM userInfo WHERE userId = '%@'",userId];
     FMResultSet *uName = [sqlite search_db:searchName];
     while([uName next]) {
@@ -63,6 +68,8 @@
     while([pGroup next]) {
         NSString *pGId = [pGroup stringForColumn:@"PGId"];
         NSString *pGName = [pGroup stringForColumn:@"PGName"];
+        NSLog(@"%@",pGName);
+        
         MyItem *root = [[MyItem alloc] init];
         root.title = pGName;
         root.itemId = pGId;
@@ -78,7 +85,7 @@
             subItem.title = pName;
             subItem.itemId = pId;
             subItem.level = 1;
-            
+            NSLog(@"%@",pName);
             [root.subItems addObject:subItem];
         }
         [self.menuData.tableViewData addObject:root];
@@ -154,27 +161,36 @@
 }
 
 - (void)addProjectOrGroup {
-    UIAlertController *alertController = [[UIAlertController alloc] init];
+    alertController = [[UIAlertController alloc] init];
     NSString *addProjectBtTitle = @"添加项目";
     NSString *addGroupBtTitle = @"添加项目族";
+    NSString *cancelTitle = @"取消";
     
     UIAlertAction *addProjectAction = [UIAlertAction actionWithTitle:addProjectBtTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        [self presentViewController:[[AddProjectViewController alloc] init] animated:true completion:nil];
     }];
     
     UIAlertAction *addGroupAction = [UIAlertAction actionWithTitle:addGroupBtTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self dismissViewControllerAnimated:true completion:nil];
+    }];
+    
+    
+    
     [alertController addAction:addProjectAction];
     [alertController addAction:addGroupAction];
+    [alertController addAction:cancelAction];
     
     [self presentViewController:alertController animated:true completion:nil];
 }
 
+#pragma mark -- reload
 
-
-
-
-
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+     [self initMenu];
+}
 @end

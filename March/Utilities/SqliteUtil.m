@@ -59,7 +59,12 @@
 }
 
 -(void)close_db {
-    [fmdb close];
+    BOOL success = [fmdb close];
+    if(success) {
+        NSLog(@"关闭成功");
+    } else {
+        NSLog(@"关闭失败");
+    }
 }
 
 

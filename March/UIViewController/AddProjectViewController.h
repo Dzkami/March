@@ -10,4 +10,6 @@
 
 @interface AddProjectViewController : BasicViewController
 
+@property (nonatomic, retain)NSMutableArray *tableViewData;
+
 @end

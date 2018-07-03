@@ -39,8 +39,8 @@ static const CGFloat criticalValue = 320/3.0;
 //    [_vc_main goToMenu:_vc_menu];
     
     [self transferToMenu];
-//    
-//    
+    
+    
 //    NSString *sql = @"SELECT * FROM UserInfo;";
 //    FMResultSet *result = [sqlite search_db:sql];
 //    
