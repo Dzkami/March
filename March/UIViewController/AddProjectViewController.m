@@ -168,10 +168,7 @@
     }
    
     [_sqlite close_db];
-    [self dismissViewControllerAnimated:true completion:^{
-        MenuViewController *vc_menu = [[MenuViewController alloc] init];
-//        [vc_menu initMenu];
-    }];
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 

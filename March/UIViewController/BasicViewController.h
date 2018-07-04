@@ -11,5 +11,8 @@
 #import "Util.h"
 
 @interface BasicViewController : UIViewController
-
+- (void)presentViewController:(UIViewController *)viewControllerToPresent
+                     animated:(BOOL)animated
+                   completion:(void (^)(void))completion
+                    pushStyle:(BOOL)isPushStyle;
 @end

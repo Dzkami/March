@@ -7,12 +7,14 @@
 //
 
 #import "MenuViewController.h"
+#import "MainViewController.h"
 #import "MenuView.h"
 #import "MenuData.h"
 #import "PGCell.h"
 #import "ProjectCell.h"
 #import "MyItem.h"
 #import "AddProjectViewController.h"
+#import "ProjectViewController.h"
 
 
 @interface MenuViewController() <UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate>{
@@ -109,12 +111,10 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return [_menuData.tableViewData count];
 }
 
@@ -139,18 +139,34 @@
 #pragma mark -- Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    PGCell *cell = (PGCell *)[tableView cellForRowAtIndexPath:indexPath];
-    if(cell.item.isSubItemOpen) {
-        NSArray *arr = [_menuData deleteMenuIndexPaths:cell.item];
-        if([arr count] > 0) {
-            [tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationFade];
+    MyItem *selectItem = [_menuData.tableViewData objectAtIndex:indexPath.row];
+    if(selectItem.level == 0) {
+        PGCell *cell = (PGCell *)[tableView cellForRowAtIndexPath:indexPath];
+        if(cell.item.isSubItemOpen) {
+            NSArray *arr = [_menuData deleteMenuIndexPaths:cell.item];
+            if([arr count] > 0) {
+                [tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationFade];
+            }
+        } else {
+            NSArray *arr = [_menuData insertMenuIndexPaths:cell.item];
+            if([arr count] > 0) {
+                [tableView insertRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationFade];
+            }
         }
-    } else {
-        NSArray *arr = [_menuData insertMenuIndexPaths:cell.item];
-        if([arr count] > 0) {
-            [tableView insertRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationFade];
+    } else if(selectItem.level == 1) {
+        ProjectViewController *vc_project = [[ProjectViewController alloc] init];
+        [vc_project setModalTransitionStyle:UIModalTransitionStylePartialCurl];
+        if(!userDefault) {
+            userDefault = [NSUserDefaults standardUserDefaults];
         }
+        [userDefault setObject:selectItem.itemId forKey:@"presentProjectId"];
+        [userDefault synchronize];
+        NSLog(@"project Id: %@",[userDefault objectForKey:@"presentProjectId"]);
+
+        [self presentViewController:vc_project animated:true completion:nil pushStyle:true];
     }
+    
+    
 }
 
 #pragma mark -- ButtonActions

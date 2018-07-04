@@ -11,4 +11,5 @@
 
 @interface MenuViewController : BasicViewController
 - (void)initMenu;
+
 @end

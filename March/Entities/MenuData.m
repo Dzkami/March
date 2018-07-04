@@ -67,7 +67,6 @@
 
 #pragma mark -- insert
 - (NSArray *)insertMenuIndexPaths: (MyItem *)item {
-
     [self.treeItemsToInsert removeAllObjects];
     [self insertMenuObject:item];
     return [self insertIndexPathsOfMenuObject:self.treeItemsToInsert];

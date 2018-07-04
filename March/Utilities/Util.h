@@ -42,6 +42,14 @@ typedef enum : NSInteger {
     MilestoneStateType_ArriveOfDelay
 }MilestoneStateType;
 
+typedef enum : NSInteger {
+    TaskStateType_NotFinish = 1,
+    TaskStateType_Delay,
+    TaskStateType_Faild,
+    TaskStateType_FinishPrematurely,
+    TaskStateType_FinishOnTime,
+    TaskStateType_FinishOfDelay
+}TaskStateType;
 
 typedef enum : NSInteger {
     UPRelationType_Manage = 1,
@@ -53,6 +61,14 @@ typedef enum : NSInteger {
     AthorityType_Excute,
     AthorityType_Browse
 }AthorityType;
+
+typedef enum : NSInteger {
+    ShowProjectCellType_Footer = 0,
+    ShowProjectCellType_Header,
+    ShowProjectCellType_Milestone,
+    ShowProjectCellType_AddTask,
+    ShowProjectCellType_Task
+} ShowProjectCellType;
 
 
 @interface Util : NSObject

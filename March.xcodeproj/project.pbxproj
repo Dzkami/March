@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		5D8DFEDC867EB25B6680F53C /* libPods-MarchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A97C8A875DDD2C3E94D7AD /* libPods-MarchTests.a */; };
 		75B0E4983640E7B0DB36A3B2 /* libPods-March.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1C7805BF5983F3AF430A9A /* libPods-March.a */; };
+		D81B18F520EC50F0008C3B3D /* Milestone.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B18F420EC50F0008C3B3D /* Milestone.m */; };
+		D81B18FB20EC5B7C008C3B3D /* ProjectHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B18F920EC5B7C008C3B3D /* ProjectHeaderCell.m */; };
+		D81B18FC20EC5B7C008C3B3D /* ProjectHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B18FA20EC5B7C008C3B3D /* ProjectHeaderCell.xib */; };
+		D81B190020EC5B95008C3B3D /* ProjectFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B18FE20EC5B95008C3B3D /* ProjectFooterCell.m */; };
+		D81B190120EC5B95008C3B3D /* ProjectFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B18FF20EC5B95008C3B3D /* ProjectFooterCell.xib */; };
+		D81B190520EC5BAC008C3B3D /* MilestoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B190320EC5BAC008C3B3D /* MilestoneCell.m */; };
+		D81B190620EC5BAC008C3B3D /* MilestoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B190420EC5BAC008C3B3D /* MilestoneCell.xib */; };
+		D81B190A20EC5C86008C3B3D /* ClickAddTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B190820EC5C86008C3B3D /* ClickAddTaskCell.m */; };
+		D81B190B20EC5C86008C3B3D /* ClickAddTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B190920EC5C86008C3B3D /* ClickAddTaskCell.xib */; };
+		D81B190F20EC5CA9008C3B3D /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B190D20EC5CA9008C3B3D /* TaskCell.m */; };
+		D81B191020EC5CA9008C3B3D /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B190E20EC5CA9008C3B3D /* TaskCell.xib */; };
+		D81B191320EC6F4C008C3B3D /* ShowProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B191220EC6F4C008C3B3D /* ShowProjectModel.m */; };
+		D81B191620EC786E008C3B3D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B191520EC786E008C3B3D /* Task.m */; };
 		D8214BE320E4BDCF00A8A856 /* SqliteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */; };
 		D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */; };
 		D82E257F20E9DEE800C2EE2B /* AddProjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257E20E9DEE800C2EE2B /* AddProjectView.m */; };
@@ -50,6 +63,9 @@
 		D8CD643320EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */; };
 		D8CD643420EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */; };
 		D8D1B9D892AB2F8BBE30DFD3 /* libPods-MarchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F0DC89335D47C92796BB25 /* libPods-MarchUITests.a */; };
+		D8E694B020EBA20000BD5A9D /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E694AF20EBA20000BD5A9D /* ProjectViewController.m */; };
+		D8E694FB20EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E694F720EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.m */; };
+		D8E694FC20EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E694F920EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.m */; };
 		D8F6D98120E9094E00D4C91D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6D98020E9094E00D4C91D /* LoginViewController.m */; };
 		D8F6D98420E909D900D4C91D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6D98320E909D900D4C91D /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +94,27 @@
 		8F2093855D0E75E72A70028E /* Pods-MarchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarchTests/Pods-MarchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A54B73B4323F2E5AE0936A4 /* Pods-MarchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarchUITests/Pods-MarchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7F0DC89335D47C92796BB25 /* libPods-MarchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81B18F320EC50F0008C3B3D /* Milestone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Milestone.h; sourceTree = "<group>"; };
+		D81B18F420EC50F0008C3B3D /* Milestone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Milestone.m; sourceTree = "<group>"; };
+		D81B18F820EC5B7C008C3B3D /* ProjectHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectHeaderCell.h; sourceTree = "<group>"; };
+		D81B18F920EC5B7C008C3B3D /* ProjectHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectHeaderCell.m; sourceTree = "<group>"; };
+		D81B18FA20EC5B7C008C3B3D /* ProjectHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectHeaderCell.xib; sourceTree = "<group>"; };
+		D81B18FD20EC5B95008C3B3D /* ProjectFooterCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectFooterCell.h; sourceTree = "<group>"; };
+		D81B18FE20EC5B95008C3B3D /* ProjectFooterCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectFooterCell.m; sourceTree = "<group>"; };
+		D81B18FF20EC5B95008C3B3D /* ProjectFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectFooterCell.xib; sourceTree = "<group>"; };
+		D81B190220EC5BAC008C3B3D /* MilestoneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MilestoneCell.h; sourceTree = "<group>"; };
+		D81B190320EC5BAC008C3B3D /* MilestoneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MilestoneCell.m; sourceTree = "<group>"; };
+		D81B190420EC5BAC008C3B3D /* MilestoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilestoneCell.xib; sourceTree = "<group>"; };
+		D81B190720EC5C86008C3B3D /* ClickAddTaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickAddTaskCell.h; sourceTree = "<group>"; };
+		D81B190820EC5C86008C3B3D /* ClickAddTaskCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickAddTaskCell.m; sourceTree = "<group>"; };
+		D81B190920EC5C86008C3B3D /* ClickAddTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClickAddTaskCell.xib; sourceTree = "<group>"; };
+		D81B190C20EC5CA9008C3B3D /* TaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		D81B190D20EC5CA9008C3B3D /* TaskCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		D81B190E20EC5CA9008C3B3D /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		D81B191120EC6F4C008C3B3D /* ShowProjectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowProjectModel.h; sourceTree = "<group>"; };
+		D81B191220EC6F4C008C3B3D /* ShowProjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowProjectModel.m; sourceTree = "<group>"; };
+		D81B191420EC786E008C3B3D /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		D81B191520EC786E008C3B3D /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteUtil.m; sourceTree = "<group>"; };
 		D8214BE220E4BDCF00A8A856 /* SqliteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteUtil.h; sourceTree = "<group>"; };
 		D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
@@ -150,6 +187,12 @@
 		D8CD643020EA5AB400CBE9CA /* ProjectInfoMileStoneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectInfoMileStoneCell.h; sourceTree = "<group>"; };
 		D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectInfoMileStoneCell.m; sourceTree = "<group>"; };
 		D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectInfoMileStoneCell.xib; sourceTree = "<group>"; };
+		D8E694AE20EBA20000BD5A9D /* ProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
+		D8E694AF20EBA20000BD5A9D /* ProjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
+		D8E694F720EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTransitionDismissPopStyleAnimator.m; sourceTree = "<group>"; };
+		D8E694F820EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTransitionPresenPushStyleAnimator.h; sourceTree = "<group>"; };
+		D8E694F920EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTransitionPresenPushStyleAnimator.m; sourceTree = "<group>"; };
+		D8E694FA20EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTransitionDismissPopStyleAnimator.h; sourceTree = "<group>"; };
 		D8F6D97F20E9094E00D4C91D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D8F6D98020E9094E00D4C91D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D8F6D98220E909D900D4C91D /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -195,6 +238,41 @@
 				B7F0DC89335D47C92796BB25 /* libPods-MarchUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D81B18F620EC5A09008C3B3D /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8B8BC5620E8BF1F005EDDFD /* PGCell.h */,
+				D8B8BC5720E8BF1F005EDDFD /* PGCell.m */,
+				D8B8BC5820E8BF1F005EDDFD /* PGCell.xib */,
+				D8B8BC5B20E8C493005EDDFD /* ProjectCell.h */,
+				D8B8BC5C20E8C493005EDDFD /* ProjectCell.m */,
+				D8B8BC5D20E8C493005EDDFD /* ProjectCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		D81B18F720EC5A4D008C3B3D /* AddProjectCell */ = {
+			isa = PBXGroup;
+			children = (
+				D874EB6020EA003C00240E44 /* ProjectInfoTextCell.h */,
+				D874EB6120EA003C00240E44 /* ProjectInfoTextCell.m */,
+				D874EB6220EA003C00240E44 /* ProjectInfoTextCell.xib */,
+				D874EB6520EA00AC00240E44 /* ProjectInfoDateCell.h */,
+				D874EB6620EA00AC00240E44 /* ProjectInfoDateCell.m */,
+				D874EB6720EA00AC00240E44 /* ProjectInfoDateCell.xib */,
+				D874EB6A20EA096F00240E44 /* ProjectInfoPickerCell.h */,
+				D874EB6B20EA096F00240E44 /* ProjectInfoPickerCell.m */,
+				D874EB6C20EA096F00240E44 /* ProjectInfoPickerCell.xib */,
+				D874EB7A20EA4FE900240E44 /* ClickAddCell.h */,
+				D874EB7B20EA4FE900240E44 /* ClickAddCell.m */,
+				D874EB7C20EA4FE900240E44 /* ClickAddCell.xib */,
+				D8CD643020EA5AB400CBE9CA /* ProjectInfoMileStoneCell.h */,
+				D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */,
+				D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */,
+			);
+			path = AddProjectCell;
 			sourceTree = "<group>";
 		};
 		D838923520E4B20A00C26364 = {
@@ -273,6 +351,8 @@
 				D8F6D98320E909D900D4C91D /* RegisterViewController.m */,
 				D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */,
 				D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */,
+				D8E694AE20EBA20000BD5A9D /* ProjectViewController.h */,
+				D8E694AF20EBA20000BD5A9D /* ProjectViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -280,6 +360,7 @@
 		D86D4BB620E5EDA800AE3C80 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D8E694FD20EBD23A00BD5A9D /* 转场动画 */,
 				D8214BE220E4BDCF00A8A856 /* SqliteUtil.h */,
 				D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */,
 				D86D4BB720E5EDE100AE3C80 /* Util.h */,
@@ -303,6 +384,12 @@
 				D86D4BC320E61D2000AE3C80 /* Group.m */,
 				D87679D620E89F0B0080F2F6 /* MenuData.h */,
 				D87679D720E89F0B0080F2F6 /* MenuData.m */,
+				D81B18F320EC50F0008C3B3D /* Milestone.h */,
+				D81B18F420EC50F0008C3B3D /* Milestone.m */,
+				D81B191120EC6F4C008C3B3D /* ShowProjectModel.h */,
+				D81B191220EC6F4C008C3B3D /* ShowProjectModel.m */,
+				D81B191420EC786E008C3B3D /* Task.h */,
+				D81B191520EC786E008C3B3D /* Task.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -334,31 +421,38 @@
 		D8B8BC5220E8B8B5005EDDFD /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D81B18F720EC5A4D008C3B3D /* AddProjectCell */,
+				D81B18F620EC5A09008C3B3D /* MenuCell */,
 				D8B8BC5320E8B8D4005EDDFD /* BasicTableViewCell.h */,
 				D8B8BC5420E8B8D4005EDDFD /* BasicTableViewCell.m */,
-				D8B8BC5620E8BF1F005EDDFD /* PGCell.h */,
-				D8B8BC5720E8BF1F005EDDFD /* PGCell.m */,
-				D8B8BC5820E8BF1F005EDDFD /* PGCell.xib */,
-				D8B8BC5B20E8C493005EDDFD /* ProjectCell.h */,
-				D8B8BC5C20E8C493005EDDFD /* ProjectCell.m */,
-				D8B8BC5D20E8C493005EDDFD /* ProjectCell.xib */,
-				D874EB6020EA003C00240E44 /* ProjectInfoTextCell.h */,
-				D874EB6120EA003C00240E44 /* ProjectInfoTextCell.m */,
-				D874EB6220EA003C00240E44 /* ProjectInfoTextCell.xib */,
-				D874EB6520EA00AC00240E44 /* ProjectInfoDateCell.h */,
-				D874EB6620EA00AC00240E44 /* ProjectInfoDateCell.m */,
-				D874EB6720EA00AC00240E44 /* ProjectInfoDateCell.xib */,
-				D874EB6A20EA096F00240E44 /* ProjectInfoPickerCell.h */,
-				D874EB6B20EA096F00240E44 /* ProjectInfoPickerCell.m */,
-				D874EB6C20EA096F00240E44 /* ProjectInfoPickerCell.xib */,
-				D874EB7A20EA4FE900240E44 /* ClickAddCell.h */,
-				D874EB7B20EA4FE900240E44 /* ClickAddCell.m */,
-				D874EB7C20EA4FE900240E44 /* ClickAddCell.xib */,
-				D8CD643020EA5AB400CBE9CA /* ProjectInfoMileStoneCell.h */,
-				D8CD643120EA5AB400CBE9CA /* ProjectInfoMileStoneCell.m */,
-				D8CD643220EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib */,
+				D81B190720EC5C86008C3B3D /* ClickAddTaskCell.h */,
+				D81B190820EC5C86008C3B3D /* ClickAddTaskCell.m */,
+				D81B190920EC5C86008C3B3D /* ClickAddTaskCell.xib */,
+				D81B18F820EC5B7C008C3B3D /* ProjectHeaderCell.h */,
+				D81B18F920EC5B7C008C3B3D /* ProjectHeaderCell.m */,
+				D81B18FA20EC5B7C008C3B3D /* ProjectHeaderCell.xib */,
+				D81B18FD20EC5B95008C3B3D /* ProjectFooterCell.h */,
+				D81B18FE20EC5B95008C3B3D /* ProjectFooterCell.m */,
+				D81B18FF20EC5B95008C3B3D /* ProjectFooterCell.xib */,
+				D81B190220EC5BAC008C3B3D /* MilestoneCell.h */,
+				D81B190320EC5BAC008C3B3D /* MilestoneCell.m */,
+				D81B190420EC5BAC008C3B3D /* MilestoneCell.xib */,
+				D81B190C20EC5CA9008C3B3D /* TaskCell.h */,
+				D81B190D20EC5CA9008C3B3D /* TaskCell.m */,
+				D81B190E20EC5CA9008C3B3D /* TaskCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D8E694FD20EBD23A00BD5A9D /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				D8E694FA20EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.h */,
+				D8E694F720EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.m */,
+				D8E694F820EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.h */,
+				D8E694F920EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.m */,
+			);
+			path = "转场动画";
 			sourceTree = "<group>";
 		};
 		E39D3DF2A8CF44F05455A3D5 /* Pods */ = {
@@ -480,8 +574,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81B191020EC5CA9008C3B3D /* TaskCell.xib in Resources */,
+				D81B190B20EC5C86008C3B3D /* ClickAddTaskCell.xib in Resources */,
+				D81B190120EC5B95008C3B3D /* ProjectFooterCell.xib in Resources */,
 				D874EB6E20EA096F00240E44 /* ProjectInfoPickerCell.xib in Resources */,
+				D81B190620EC5BAC008C3B3D /* MilestoneCell.xib in Resources */,
 				D874EB7820EA4BB800240E44 /* Assets.xcassets in Resources */,
+				D81B18FC20EC5B7C008C3B3D /* ProjectHeaderCell.xib in Resources */,
 				D838924E20E4B20E00C26364 /* LaunchScreen.storyboard in Resources */,
 				D874EB6920EA00AC00240E44 /* ProjectInfoDateCell.xib in Resources */,
 				D8CD643420EA5AB400CBE9CA /* ProjectInfoMileStoneCell.xib in Resources */,
@@ -576,6 +675,12 @@
 				D86D4BC420E61D2000AE3C80 /* Group.m in Sources */,
 				D838924620E4B20A00C26364 /* ViewController.m in Sources */,
 				D86D4BBD20E605A500AE3C80 /* User.m in Sources */,
+				D81B191320EC6F4C008C3B3D /* ShowProjectModel.m in Sources */,
+				D8E694FC20EBD22A00BD5A9D /* PPTransitionPresenPushStyleAnimator.m in Sources */,
+				D81B18F520EC50F0008C3B3D /* Milestone.m in Sources */,
+				D8E694B020EBA20000BD5A9D /* ProjectViewController.m in Sources */,
+				D81B190020EC5B95008C3B3D /* ProjectFooterCell.m in Sources */,
+				D8E694FB20EBD22A00BD5A9D /* PPTransitionDismissPopStyleAnimator.m in Sources */,
 				D8F6D98420E909D900D4C91D /* RegisterViewController.m in Sources */,
 				D874EB6820EA00AC00240E44 /* ProjectInfoDateCell.m in Sources */,
 				D8F6D98120E9094E00D4C91D /* LoginViewController.m in Sources */,
@@ -585,6 +690,8 @@
 				D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */,
 				D874EB6D20EA096F00240E44 /* ProjectInfoPickerCell.m in Sources */,
 				D87679D820E89F0B0080F2F6 /* MenuData.m in Sources */,
+				D81B190520EC5BAC008C3B3D /* MilestoneCell.m in Sources */,
+				D81B191620EC786E008C3B3D /* Task.m in Sources */,
 				D838925120E4B20E00C26364 /* main.m in Sources */,
 				D82E257F20E9DEE800C2EE2B /* AddProjectView.m in Sources */,
 				D8800E9620E74077000DD34A /* MainView.m in Sources */,
@@ -594,9 +701,12 @@
 				D8B8BC5E20E8C493005EDDFD /* ProjectCell.m in Sources */,
 				D86D4BC120E61D1700AE3C80 /* Project.m in Sources */,
 				D838924320E4B20A00C26364 /* AppDelegate.m in Sources */,
+				D81B190F20EC5CA9008C3B3D /* TaskCell.m in Sources */,
+				D81B18FB20EC5B7C008C3B3D /* ProjectHeaderCell.m in Sources */,
 				D874EB7120EA10BA00240E44 /* CreateProjectModel.m in Sources */,
 				D86D4BB920E5EDE100AE3C80 /* Util.m in Sources */,
 				D8214BE320E4BDCF00A8A856 /* SqliteUtil.m in Sources */,
+				D81B190A20EC5C86008C3B3D /* ClickAddTaskCell.m in Sources */,
 				D8800E9920E7663A000DD34A /* BasicView.m in Sources */,
 				D86D4BCA20E6215600AE3C80 /* BasicViewController.m in Sources */,
 				D8B8BC5920E8BF1F005EDDFD /* PGCell.m in Sources */,

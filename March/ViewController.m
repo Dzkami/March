@@ -31,6 +31,12 @@ static const CGFloat criticalValue = 320/3.0;
     
     [self.navigationController setNavigationBarHidden:true];
     
+//    UIButton *bt = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 40)];
+//    [bt setTitle:@"点我" forState:UIControlStateNormal];
+//    [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [self.view addSubview:bt];
+//    [bt addTarget:self action:@selector(pushToMenu) forControlEvents:UIControlEventTouchUpInside];
+    
     _vc_menu = [[MenuViewController alloc] init];
     [self.view addSubview:_vc_menu.view];
     
@@ -39,6 +45,7 @@ static const CGFloat criticalValue = 320/3.0;
 //    [_vc_main goToMenu:_vc_menu];
     
     [self transferToMenu];
+    NSLog(@"root  ::  %@",self.navigationController);
     
     
 //    NSString *sql = @"SELECT * FROM UserInfo;";
@@ -51,6 +58,11 @@ static const CGFloat criticalValue = 320/3.0;
 //    }
     
 }
+//
+//- (void)pushToMenu {
+//    [self.navigationController pushViewController:_vc_menu animated:true];
+//
+//}
 
 
 

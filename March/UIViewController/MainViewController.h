@@ -10,5 +10,5 @@
 #import "MenuViewController.h"
 
 @interface MainViewController : BasicViewController
-- (void)goToMenu:(MenuViewController *)menu;
+-(void)transferSlideMenu;
 @end

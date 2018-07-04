@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
 #import "Util.h"
+#import "MyItem.h"
 
 @interface BasicTableViewCell : UITableViewCell
 

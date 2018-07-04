@@ -8,11 +8,6 @@
 
 #import "Project.h"
 
-@interface Project () {
-    NSString *pName;
-}
-@end
-
 @implementation Project
 
 @end
