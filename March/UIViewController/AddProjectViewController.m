@@ -18,9 +18,9 @@
     NSInteger mileStoneCount;
 
 }
+@property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong) NSDate *endDate;
 @property (nonatomic, strong) NSDate *startDate;
-@property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *projectType;
 @property (nonatomic, retain) NSMutableArray *projectGroup;
 @property (nonatomic, retain) NSMutableDictionary *projectInfoDic;
@@ -107,10 +107,10 @@
     NSDate *sDate = [_projectInfoDic objectForKey:@"startDate"];
     
     NSDate *eDate = [_projectInfoDic objectForKey:@"EEndDate"];
-    NSComparisonResult compare = [eDate compare:[NSDate date]];
-    if(compare == NSOrderedSame) { //等于开始时间,即为初始值
-        [self showAlertMessage:@"请选择项目结束日期"];
-    }
+//    NSComparisonResult compare = [eDate compare:[NSDate date]];
+//    if(compare == NSOrderedSame) { //等于开始时间,即为初始值
+//        [self showAlertMessage:@"请选择项目结束日期"];
+//    }
     
     [_sqlite open_db];
     int projectId = -1;
@@ -132,7 +132,7 @@
                                        [NSNumber numberWithInteger:PGId], @"PGId",
                                        sDate, @"startDate",
                                        eDate, @"EEndDate",
-                                       [NSNumber numberWithInteger:ProjectStateType_NotStarted], @"PStateId", nil];
+                                       [NSNumber numberWithInteger:ProjectStateType_InProgress], @"PStateId", nil];
 
         [_sqlite add_db:insertProjStr withParamterDic:insertProjDic];
 
@@ -216,6 +216,7 @@
     startTimeModel.key = @"startDate";
     startTimeModel.cellType = CreateProjectCellType_DPK;
     startTimeModel.date = [NSDate date];//默认今天
+    
     [_projectInfoDic setObject: [NSDate date] forKey:@"startDate"];
     [_tableViewData addObject:startTimeModel];
     
@@ -224,6 +225,7 @@
     expectEndTimeModel.placeholder = @"选择结束时间";
     expectEndTimeModel.key = @"EEndDate";
     expectEndTimeModel.date = [NSDate date];//默认今天
+    [self.projectInfoDic setObject:[NSDate date] forKey:@"EEndDate"];
     expectEndTimeModel.cellType = CreateProjectCellType_DPK;
     [_projectInfoDic setObject:@"" forKey:@"EEndDate"];
     [_tableViewData addObject:expectEndTimeModel];

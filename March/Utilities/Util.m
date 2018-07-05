@@ -37,5 +37,20 @@
     return [formatter stringFromDate:date];
 }
 
+//+ (NSString *)transDateWithMinuteToString:(NSDate *)date {
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+//    return [formatter stringFromDate:date];
+//}
+
+
++ (NSDate *)transStringToDate:(NSString *)dateStr {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy年MM月dd日";
+    NSDate *date = [formatter dateFromString:dateStr];
+    
+    return date;
+}
+
 
 @end

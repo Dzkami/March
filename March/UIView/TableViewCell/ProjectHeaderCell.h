@@ -14,4 +14,5 @@
 
 +(instancetype)createCellWithTableView:(UITableView *)tableView;
 - (void)setProjectGoal:(NSString *)projectGoal;
+- (void)setProjectStateImg:(UIImage *)img;
 @end

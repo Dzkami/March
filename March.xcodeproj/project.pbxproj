@@ -22,6 +22,7 @@
 		D81B191020EC5CA9008C3B3D /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D81B190E20EC5CA9008C3B3D /* TaskCell.xib */; };
 		D81B191320EC6F4C008C3B3D /* ShowProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B191220EC6F4C008C3B3D /* ShowProjectModel.m */; };
 		D81B191620EC786E008C3B3D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B191520EC786E008C3B3D /* Task.m */; };
+		D81B191920ECD91D008C3B3D /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B191820ECD91D008C3B3D /* AddTaskViewController.m */; };
 		D8214BE320E4BDCF00A8A856 /* SqliteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */; };
 		D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257B20E9D79700C2EE2B /* AddProjectViewController.m */; };
 		D82E257F20E9DEE800C2EE2B /* AddProjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E257E20E9DEE800C2EE2B /* AddProjectView.m */; };
@@ -115,6 +116,8 @@
 		D81B191220EC6F4C008C3B3D /* ShowProjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowProjectModel.m; sourceTree = "<group>"; };
 		D81B191420EC786E008C3B3D /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		D81B191520EC786E008C3B3D /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		D81B191720ECD91D008C3B3D /* AddTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		D81B191820ECD91D008C3B3D /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
 		D8214BE120E4BDCF00A8A856 /* SqliteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteUtil.m; sourceTree = "<group>"; };
 		D8214BE220E4BDCF00A8A856 /* SqliteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteUtil.h; sourceTree = "<group>"; };
 		D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
@@ -353,6 +356,8 @@
 				D82E257A20E9D79700C2EE2B /* AddProjectViewController.h */,
 				D8E694AE20EBA20000BD5A9D /* ProjectViewController.h */,
 				D8E694AF20EBA20000BD5A9D /* ProjectViewController.m */,
+				D81B191720ECD91D008C3B3D /* AddTaskViewController.h */,
+				D81B191820ECD91D008C3B3D /* AddTaskViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -685,6 +690,7 @@
 				D874EB6820EA00AC00240E44 /* ProjectInfoDateCell.m in Sources */,
 				D8F6D98120E9094E00D4C91D /* LoginViewController.m in Sources */,
 				D86D4BC720E6214300AE3C80 /* MainViewController.m in Sources */,
+				D81B191920ECD91D008C3B3D /* AddTaskViewController.m in Sources */,
 				D874EB6320EA003C00240E44 /* ProjectInfoTextCell.m in Sources */,
 				D87679DB20E8A05A0080F2F6 /* MyItem.m in Sources */,
 				D82E257C20E9D79700C2EE2B /* AddProjectViewController.m in Sources */,

@@ -23,4 +23,8 @@
 @property (nonatomic, assign) NSInteger projectId;
 @property (nonatomic, assign) TaskStateType tStateId;
 
+@property (nonatomic, retain) NSString *taskAddDate;
+@property (nonatomic, retain) NSDate *mEArriveDate;
+
+
 @end

@@ -44,6 +44,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="img_projectState" destination="VHR-pX-0RO" id="O2S-Dx-OnU"/>
                 <outlet property="lb_projectGoal" destination="nDp-ug-hIx" id="CHQ-GL-AEF"/>
             </connections>
         </tableViewCell>

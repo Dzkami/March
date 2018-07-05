@@ -32,7 +32,8 @@ typedef enum : NSInteger {
     ProjectStateType_InProgress,
     ProjectStateType_EndPrematurely,
     ProjectStateType_EndOnTime,
-    ProjectStateType_EndOfDelay
+    ProjectStateType_EndOfDelay,
+    ProjectStateType_Delay
 }ProjectStateType;
 
 typedef enum : NSInteger {
@@ -74,4 +75,6 @@ typedef enum : NSInteger {
 @interface Util : NSObject
 + (void)shake:(UITextField *)field;
 + (NSString *)transDateToString:(NSDate *)date;
++ (NSString *)transDateWithMinuteToString:(NSDate *)date;
++ (NSDate *)transStringToDate:(NSString *)dateStr;
 @end

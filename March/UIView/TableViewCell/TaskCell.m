@@ -42,7 +42,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [_img_taskState setHidden:true];
+//    [_img_taskState setHidden:true];
     // Initialization code
 }
 

@@ -10,6 +10,7 @@
 
 @interface ProjectHeaderCell()
 @property (weak, nonatomic) IBOutlet UILabel *lb_projectGoal;
+@property (weak, nonatomic) IBOutlet UIImageView *img_projectState;
 
 @end
 
@@ -27,6 +28,10 @@
 
 - (void)setProjectGoal:(NSString *)projectGoal {
     self.lb_projectGoal.text = projectGoal;
+}
+
+- (void)setProjectStateImg:(UIImage *)img {
+    [self.img_projectState setImage:img];
 }
 
 - (void)awakeFromNib {
